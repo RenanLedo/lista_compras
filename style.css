@@ -1,0 +1,96 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  padding: 0 10%;
+}
+#cabecalho {
+  background-color: rgb(2, 44, 83);
+  color: white;
+  width: 100%;
+  height: 80px;
+  text-align: center;
+  position: relative;
+}
+
+#cabecalho h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#cadastro-item {
+  width: 100%;
+  display: flex;
+  padding: 20px 0;
+}
+
+input[type="text"],
+input[type="number"] {
+  padding: 8px;
+  margin-right: 10px;
+  flex: 1;
+  border-radius: 50px;
+  border: solid 1px gray;
+}
+
+input[name="quantidade"] {
+  flex: 0.3;
+}
+input[name="price"] {
+  flex: 0.3;
+}
+
+input[type="submit"] {
+  flex: 0.5;
+  border-radius: 50px;
+  border: none;
+  color: rgb(255, 255, 255);
+  background-color: rgb(2, 44, 83);
+}
+
+#list-produtos {
+  width: 100%;
+}
+
+#list-produtos table {
+  width: 100%;
+}
+#list-produtos table td {
+  padding: 8px;
+}
+.title-table {
+  width: 60%;
+  border: 1px solid gray;
+  border-radius: 50px;
+}
+.quant {
+  width: 20%;
+  border: 1px solid gray;
+  text-align: center;
+  border-radius: 50px;
+}
+.price {
+  width: 20%;
+  border: 1px solid gray;
+  text-align: center;
+  border-radius: 50px;
+}
+
+.button-clear {
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1000;
+}
+
+.button-clear button {
+  padding: 15px;
+  background-color: brown;
+  color: white;
+  border: none;
+}

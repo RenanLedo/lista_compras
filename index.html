@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Compras Supermercado</title>
+  </head>
+  <body>
+    <section id="cabecalho">
+      <h1>Compras no Supermercado</h1>
+    </section>
+
+    <section id="cadastro-item">
+      <input
+        type="text"
+        placeholder="Nome do produto..."
+        name="produto"
+        id="produto"
+      />
+      <input
+        type="number"
+        placeholder="Quantidade..."
+        name="quantidade"
+        id="quantidade"
+      />
+      <input
+        type="number"
+        placeholder="Valor do produto..."
+        name="price"
+        id="price"
+        step="0.01"
+      />
+      <input type="submit" value="Enviar" />
+    </section>
+
+    <section id="list-produtos">
+      <table class="table">
+        <!-- <tr>
+          <td class="title-table">Coca Cola</td>
+          <td class="quant">3 qtd</td>
+          <td class="price">R$ 20,00</td>
+        </tr> -->
+      </table>
+    </section>
+
+    <section class="button-clear">
+      <button class="clear">Limpar Tabela</button>
+      <button class="soma">R$ 0,00</button>
+    </section>
+    <script src="compras.js"></script>
+  </body>
+</html>
